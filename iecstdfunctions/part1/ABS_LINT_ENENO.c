@@ -3,12 +3,12 @@
 
 
 /* explicitly typed function */
-inline DINT ABS_DINT(BOOL EN, BOOL *ENO, DINT op){
+inline LINT ABS_LINT(BOOL EN, BOOL *ENO, LINT op){
   
 if (!EN) {
   if (ENO != NULL)
     *ENO = __BOOL_LITERAL(FALSE);
-  return __INIT_DINT;
+  return __INIT_LINT;
 }
 else if (ENO != NULL)
   *ENO = __BOOL_LITERAL(TRUE);
@@ -18,6 +18,6 @@ else if (ENO != NULL)
   return op;
 }
 /* overloaded function */
-inline DINT ABS__DINT__DINT(BOOL EN, BOOL *ENO, DINT op){
-  return ABS_DINT(EN, ENO, op);
+inline LINT ABS__LINT__LINT(BOOL EN, BOOL *ENO, LINT op){
+  return ABS_LINT(EN, ENO, op);
 }
