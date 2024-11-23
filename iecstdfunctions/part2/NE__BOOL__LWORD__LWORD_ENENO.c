@@ -2,7 +2,7 @@
 #include <iec_std_lib.h>
 
 
-inline BOOL NE__BOOL__BOOL__BOOL(BOOL EN, BOOL *ENO, BOOL op1, BOOL op2){
+inline BOOL NE__BOOL__LWORD__LWORD(BOOL EN, BOOL *ENO, LWORD op1, LWORD op2){
   
 if (!EN) {
   if (ENO != NULL)

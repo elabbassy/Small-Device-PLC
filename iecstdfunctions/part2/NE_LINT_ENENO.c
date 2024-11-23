@@ -2,7 +2,7 @@
 #include <iec_std_lib.h>
 
 
-inline BOOL NE__BOOL__BOOL__BOOL(BOOL EN, BOOL *ENO, BOOL op1, BOOL op2){
+inline BOOL NE_LINT(BOOL EN, BOOL *ENO, LINT op1, LINT op2){
   
 if (!EN) {
   if (ENO != NULL)

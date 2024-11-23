@@ -2,7 +2,7 @@
 #include <iec_std_lib.h>
 
 
-inline BOOL NE__BOOL__BOOL__BOOL(BOOL EN, BOOL *ENO, BOOL op1, BOOL op2){
+inline BOOL pNE_TOD(BOOL EN, BOOL *ENO, TOD *op1, TOD *op2){
   
 if (!EN) {
   if (ENO != NULL)
@@ -12,5 +12,5 @@ if (!EN) {
 else if (ENO != NULL)
   *ENO = __BOOL_LITERAL(TRUE);
  
-  return op1 != op2 ? 1 : 0;          
+  return __ptime_cmp(op1, op2) != 0 ? 1 : 0;   
 }

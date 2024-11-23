@@ -2,7 +2,7 @@
 #include <iec_std_lib.h>
 
 
-inline BOOL NE__BOOL__BOOL__BOOL(BOOL EN, BOOL *ENO, BOOL op1, BOOL op2){
+inline BOOL NE__BOOL__BYTE__BYTE(BOOL EN, BOOL *ENO, BYTE op1, BYTE op2){
   
 if (!EN) {
   if (ENO != NULL)
