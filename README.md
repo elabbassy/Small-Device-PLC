@@ -1,7 +1,8 @@
 About:
+
 An SDCC (Small Device C Compiler) port for (MATIEC) implementaion of 
 IEC 61131-3 standard.
-based on MATIEC "lib c" (See the license below)
+based on MATIEC "lib c"
 Challenges and Limitations:
 the proting attempt is as follows:
 1- code part is stripped from header files, function prototypes
