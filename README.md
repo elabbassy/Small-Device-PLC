@@ -1,10 +1,10 @@
-About:
+<h1>About:</h1>
 
 An SDCC (Small Device C Compiler) port for (MATIEC) implementaion of 
 IEC 61131-3 standard.
 based on MATIEC "lib c"
 
-Challenges and Limitations:
+<h1>Challenges and Limitations:</h1>
 
 the proting attempt is as follows:
 
@@ -35,13 +35,14 @@ the proting attempt is as follows:
 6- most of functions are (reentrant) so, lib archive shall be compiled/linked with 
    "stack-auto" - for mcs51 target - or equivalent option.
    
-Usage:
+<h1>Usage:</h1>
 - the repo contains pre-built *.lib archives for mcs51 target, for different targets or
   other build options just run:
   make all
-- in your SDCC porject add the (3) generated liberaries to linker search path:
-
+- in your SDCC porject add the (3) generated liberaries to linker search path (ex: add these lines to your makefile):
+<code>
   LIBPATH = path_to_libraries
   LINK_LIBS = -liec_std_functions.lib -liec_std_FB.lib -liec_std_lib.lib
   LFLAGS = -L$(LIBPATH) $(LINK_LIBS)
+</code>
 - add (inc) folder to compiler search path
