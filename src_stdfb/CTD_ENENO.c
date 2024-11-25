@@ -1,7 +1,7 @@
 #include "iec_std_lib.h"
 
 
-void CTD_DINT_init_ENENO__(CTD_DINT *data__, BOOL retain) {
+void CTD_init_ENENO__(CTD *data__, BOOL retain) {
   __INIT_VAR(data__->EN,__BOOL_LITERAL(TRUE),retain)
   __INIT_VAR(data__->ENO,__BOOL_LITERAL(TRUE),retain)
   __INIT_VAR(data__->CD,__BOOL_LITERAL(FALSE),retain)
@@ -13,7 +13,7 @@ void CTD_DINT_init_ENENO__(CTD_DINT *data__, BOOL retain) {
 }
 
 // Code part
-void CTD_DINT_body_ENENO__(CTD_DINT *data__) {
+void CTD_body_ENENO__(CTD *data__) {
   // Control execution
   if (!__GET_VAR(data__->EN)) {
     __SET_VAR(data__->,ENO,,__BOOL_LITERAL(FALSE));
@@ -37,4 +37,4 @@ void CTD_DINT_body_ENENO__(CTD_DINT *data__) {
 
 __end:
   return;
-} // CTD_DINT_body__() 
+} // CTD_body__() 
